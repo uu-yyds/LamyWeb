@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LAMY</title>
+        <style type="text/css">
+            .box1{
+                border: 2px soild black;
+                height:700px;
+                position:relative;
+                background-image: url("./picture/背景.png");
+            }
+            .box1_head{
+                width:1000px;
+                margin: 0 auto;
+                display: flex;
+                justify-content:space-around;
+            }
+            .box1_head div{
+                height:120px;
+                margin: 40px;
+                font-style: oblique;
+                font-weight: 1000;
+            }
+            .png{
+                height:80px;
+                width:200px;
+                background-color: red;
+                padding: 10px;
+            }
+            .box1_body{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+            }
+
+            .box2{
+                height:50px;
+            }
+
+            .box3{
+                height:350px;
+                background-color: rgb(204, 198, 198);
+                position: relative;
+            }
+            .box3_card{
+                position: absolute;
+                width: 1000px;
+                height: 400px;
+                left:50%;
+                top:60px;
+                transform: translateX(-50%);
+                background-color: white;
+                box-shadow:4px 4px 6px #666; 
+                display: flex;
+            }
+            .box3_png{
+                height:100%;
+                width:40%;
+            }
+            .text{
+                height:100%;
+                width: 60%;
+                padding: 8%;
+                font-size: large;
+                font-family:"宋体";
+            }
+            .box3_layer1{
+                position: absolute;
+                background-color: rgba(237, 45, 105, 0.8);
+                width: 300px;
+                height: 180px;
+                top:70%;
+                left:10%;
+            }
+            .play{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .box4{
+                height: 750px;
+                position: relative;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box4_title{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                top:25%;
+            }
+            .box4 div{
+                width:20%;
+                margin: 30px;
+                padding: 20px;
+            }
+            .word{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                bottom: 10%;
+                padding: 10px;
+                letter-spacing: 10px;
+                background-color: black;
+                color:white;
+                text-align:center;
+            }
+
+            .box5{
+                height:400px;
+                background-color: rgb(171, 170, 170);
+                position: relative;
+            }
+            .pen{
+                position: absolute;
+                height: 100%;
+                width:100%;    
+            }
+            .TM{
+                position: absolute;
+                height:5%;
+                width:5%;
+                background-color: red;
+                padding: 5px;
+                top:55%;
+                left:20%;
+            }
+
+            .box6{
+                height: 400px;
+                background-color: grey;
+                position: relative;
+            }
+            .box6 img{
+                display: block;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .box6_card{
+                position: absolute;
+                width: 700px;
+                height:300px;
+                left:50%;
+                transform: translateX(-50%);
+                top:40%;
+                box-shadow:4px 4px 6px #666; 
+                background-color: white;
+            }
+            .face{
+                margin:0 auto;
+            }
+            .box6_word{
+                position: absolute;
+                width:70%;
+                top:60%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            .box6_block{
+                display: flex;
+                position: absolute;
+                bottom: 10%;
+                left:50%;
+                transform: translateX(-50%);
+            }
+
+            .box7{
+                height:1100px;
+                position: relative;
+            }
+            .Choose{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                top:15%;
+            }
+            .products{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                top:20%;
+            }
+            .box7_picture{ 
+                width:1000px;
+                margin:0 auto;
+                height:100%;
+                display: flex;
+                align-items: flex-end;
+            }
+            .box7_picture div img{
+                display: block;
+                margin: 20px;
+            }
+            .box7_picture div{
+                margin:0 auto;
+                height:70%;
+            }
+             .word_two{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                bottom: 2%;
+                padding: 15px;
+                letter-spacing: 10px;
+                background-color: rgb(52, 45, 45);
+                color:white;
+                text-align:center;
+            }
+
+            .box8{
+                height:300px;
+                position: relative;
+                background-color: rgb(50, 50, 50);
+            }
+            .box8_card{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                top:50%;
+                background-color: white;
+                box-shadow:4px 4px 6px #666; 
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+            }
+            .card_part2{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-left: 20px;
+            }
+
+            .box9{
+                height: 400px;
+                position: relative;
+            }
+            .box9_word{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                bottom: 5%;
+                padding: 8px;
+                letter-spacing: 10px;
+                background-color: red;
+                color:white;
+                text-align:center;
+            }
+
+            .box10{
+                border: 2px soild black;
+                height:700px;
+                position:relative;
+                background-image: url("./picture/背景2.png");
+                background-size: cover;
+                position: relative;
+            }
+            .box10_box{
+                position: absolute;
+                left: 50%;
+                transform:translateX(-50%);
+                top:22%;
+            }
+            .box10 img{
+                margin:10px;
+            }
+           
+            .box11{
+                background-color: grey;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box1">
+            <div class="box1_head">
+                <div>新品推荐</div>
+                <div>在线购买产品</div>
+                <img src="./picture/img_lamylogo.png" alt="img_lamylogo" title="img_lamylogo" class="png">
+                <div>企业礼包</div>
+                <div>品牌介绍</div>
+            </div>
+            <img src="./picture/The best pen is  just LAMY.png" alt="The best pen is just LAMY" title="The best pen is just LAMY" class="box1_body">
+        </div>
+        
+        <div class="box2"></div>
+
+        <div class="box3">
+            <div class="box3_card">
+                <img src="./picture/box3-1.png" alt="box3-1" title="box3-1" class="box3_png">
+                <div class="text">
+                    <img src="./picture/Welcome to Lamy.png" alt="Welcome to Lamy" title="Welcome to Lamy" class="box3_title">
+                    <p>德国书写工具品牌LAMY始创人C•Josef Lamy于1930年在海德 堡创立了欧瑟斯墨水笔制造厂.1952年，崭露头角的LAMY流线型墨水笔震撼问世，彰显公司的创新敏锐触觉。</p>
+                    <p>1996年终于打造出令人耳目一新的经典之作-LAMY 2000系列。产品撮合了聚碳酸酯与不锈钢材质，绝妙的搭配，使之从芸芸众生的书写工具中脱颖而出，时至今日，仍在市场具有影响力。</p>
+                </div>
+                <div class="box3_layer1">
+                    <img src="./picture/播放.png" alt="播放" title="播放" class="play">
+                </div>
+            </div>
+        </div>
+
+        <div class="box4">
+                <img src="./picture/LAMY各系列.png" alt="Lamy各系列" title="Lamy各系列" class="box4_title">
+                <div>
+                    <h2>【恒星系列&nbsp;墨水笔】</h2>
+                    <p>LAMY 恒星系列延续了LAMY 的时尚造型，打造出锦上添花的极致品质。此系列全部均由氧化独特的凹陷式笔握以及弹性铜线笔夹丰富的颜色让LAMY恒星系列突破了传统散发着无限的青春魅力。</p>
+                </div>
+                <div>
+                    <h2>【狩猎系列&nbsp;限量色墨水笔】</h2>
+                    <p>
+                        色彩丰富，颜色亮丽，不仅是可以作为书 写工具，同样是很好的装饰品 宽大的笔夹设计，可随时夹在包带、牛仔裤、 T恤袖口上，让您感受创意方便的携带方式。笔身通体材质采用车用强力ABS材料。
+                    </p>
+                </div>
+                <div>
+                    <h2>【喜悦系列&nbsp;美术笔】</h2>
+                    <p>用以绘图、写艺术字、艺术签名 扁平状的笔尖设计，适合书写艺术字 立体感极佳.1、1.5、1.9三种笔尖可供选择 ，可书写粗细不等的立体字，让您随时感受变化的乐趣，复古的笔杆设计，经典又与众不同，显示独特的欣赏品味。</p>
+                </div>
+                <div class="word"><h2>了解详情》</h2></div>
+        </div>
+
+        <div class="box5">
+            <img src="./picture/pen.png" alt="pen" title="pen" class="pen">
+            <img src="./picture/LAMY.png" alt="LAMY" title="LAMY" class="TM">
+        </div>
+
+        <div class="box6">
+            <img src="./picture/Form Germany.png" alt="Form Germany" title="Form Germany" class="Form">
+            <img src="./picture/What people are saying.png" alt="saying" title="saying" class="saying">
+            <div class="box6_card">
+                <img src="./picture/face.png" alt="face" title="face" class="face">
+                <div class="box6_word">使用令人难以置信的生产技术和坚持极高水平的精准要求，仅使用一种 材质，也足以成就出这款永恒的设计。产品本身是体现不同加工程序和制造工艺。手工打磨的亚光拉丝表面充分体现了品牌对细节的注重。</div>
+                <div class="box6_block">
+                    <img src="./picture/切换格1.png" class="block1">
+                    <img src="./picture/切换格2.png" class="block2">
+                    <img src="./picture/切换格2.png" class="block3">
+                </div>
+            </div>
+        </div>
+        
+        <div class="box7">
+            <div class="box7_word">
+                <img src="./picture/Choose.png" alt="Choose" title="Choose" class="Choose">
+                <img src="./picture/Our products.png" alt="Our products" title="Our products" class="products">
+            </div>
+            <div class="box7_picture">
+                <div class="part_one">
+                    <img src="./picture/pen1.png" class="pen1">
+                    <img src="./picture/pen2.png" class="pen2">
+                </div>
+                <div class="part_two">
+                    <img src="./picture/pen3.png" class="pen3">
+                    <img src="./picture/pen4.png" class="pen4">
+                </div>
+                <div class="part_three">
+                    <img src="./picture/pen5.png" class="pen5">
+                    <img src="./picture/pen6.png" class="pen6">
+                </div>
+            </div>
+            <div class="word_two"><h2>戳我速购》</h2></div>
+        </div>
+
+        <div class="box8">
+            <div class="box8_card">
+                <div class="card_part1">
+                    <img src="./picture/8-1.png" class="8-1">
+                    <img src="./picture/8-2.png" class="8-2">
+                    <img src="./picture/8-3.png" class="8-3">
+                </div>
+                <div class="card_part2">
+                    <img src="./picture/8-1word.png" class="8-1word">
+                    <img src="./picture/8-2word.png" class="8-2word">
+                    <img src="./picture/8-3word.png" class="8-3word">
+                </div>
+            </div>
+        </div>
+
+        <div class="box9">
+            <div class="box9_word"><h2>新品推荐》</h2></div>
+        </div>
+
+        <div class="box10">
+            <div class="box10_box">
+                <img src="./picture/CUTE useful.png" class="insert1">
+                <img src="./picture/LAMY2.png" class="insert2">
+                <img src="./picture/GOOD SIMPLE.png" class="insert3">
+            </div>
+        </div>
+
+        <div class="box11">
+            © 凌美中国 2015 版权所有 不得转载
+        </div>
+    </body>
+</html>
